@@ -28,16 +28,23 @@ public class POSManagerPage {
     @FindBy(className = "o_column_sortable")
     public List<WebElement>repairsOrders;
 
-    @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']")
-    public WebElement parentOfMainModules;
 
-
-    public List<WebElement>allMainModules(){
-        return parentOfMainModules.findElements(By.xpath("*"));
-    }
+    @FindBy(xpath = "//li[@style='display: block;']")
+    public List<WebElement>mainModules;
 
     @FindBy(xpath = "//a[@data-menu-xmlid='calendar.mail_menu_calendar']")
     public WebElement calendarButton;
+
+    @FindBy(xpath ="//a[@data-menu-xmlid='point_of_sale.menu_point_root']")
+    public WebElement pointOfSaleButton;
+
+
+
+
+
+
+
+
 
 
 

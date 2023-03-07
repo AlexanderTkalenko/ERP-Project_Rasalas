@@ -1,13 +1,18 @@
 @US14
 Feature: calendar page
 
-  Scenario: Verify POS manager get time list by default from 0:00-23:00 and increase by one hour each time
-    Given user should be able to put POS manager username in username box
-    Given user should be able to put POS manager password in password box
-    And the user should be able to click on Log in button
+  Background:
+    Given user should be able to log in as a POS manager
     When user clicks on the Calendar page
+
+
+  Scenario: Verify the time list starts with 0:00
     Then user should see the time starts with "0:00"
+
+  Scenario: Verify the time list starts with 23:00
     Then user should see the time ends with "23:00"
+
+  Scenario: Verify time increases by an hour
     And time increases by one hour
       | 0:00  |
       | 1:00  |
