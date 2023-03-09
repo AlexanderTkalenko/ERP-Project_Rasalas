@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class LoginAsPOSAndCRM_StepDefinitions {
+public class US12_AM5_LoginAsPOSAndCRM_StepDefinitions {
     LoginPage loginPage= new LoginPage();
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
