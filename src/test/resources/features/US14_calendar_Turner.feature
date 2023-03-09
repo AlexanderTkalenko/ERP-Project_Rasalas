@@ -2,7 +2,7 @@
 Feature: calendar page
 
   Background:
-    Given user should be able to log in as a POS manager
+    Given the user logged in as "POSmanager"
     When user clicks on the Calendar page
 
 
