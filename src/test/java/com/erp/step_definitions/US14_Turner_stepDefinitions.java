@@ -9,7 +9,7 @@ import org.junit.Assert;
 import java.util.List;
 
 
-public class US14_stepDefinitions {
+public class US14_Turner_stepDefinitions {
 
     POSManagerPage pos_Manager_Page = new POSManagerPage();
     CalendarPage calendarPage = new CalendarPage();
