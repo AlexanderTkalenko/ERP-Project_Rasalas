@@ -56,12 +56,12 @@ public class Hooks {
 
     //@BeforeStep
     public void setupStep(){
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
     //@AfterStep
     public void teardownStep(){
-        System.out.println("-----> @AfterSTEP : Running after each step!");
+
     }
 
 

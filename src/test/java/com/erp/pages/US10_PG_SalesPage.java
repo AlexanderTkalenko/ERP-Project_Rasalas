@@ -16,13 +16,11 @@ public class US10_PG_SalesPage {
     @FindBy(xpath = "//a[@data-menu='445']")
     public WebElement salesPage;
 
-    @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[9]")
-    public WebElement quotationsPage;
 
-    @FindBy(xpath = "(//div[@class='o_checkbox'])[3]")
+    @FindBy(xpath = "//div[@class='o_content']//div[@class='o_checkbox'][1]")
     public WebElement mainQuotationCheckbox;
 
-    @FindBy(xpath = "//div[@class='o_content']//div[@class='o_checkbox']")
+    @FindBy(xpath = "//div[@class='o_content']//input[@type='checkbox']")
     public List<WebElement> allQuotationCheckboxes;
 
 
