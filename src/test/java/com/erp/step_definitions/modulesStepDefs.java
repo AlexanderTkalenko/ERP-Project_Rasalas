@@ -34,4 +34,6 @@ public class modulesStepDefs {
     public void verifyAllEnableModulesEquals(int numberModules) {
         Assert.assertTrue(basePage.modulesList.size() == numberModules);
     }
+
+
 }
